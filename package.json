@@ -1,7 +1,7 @@
 {
   "name": "@tabcat/signal-protocol",
   "repository": "https://github.com/tabcat/signal-protocol",
-  "description": "signal-protocol module hack for prototyping",
+  "description": "signal-protocol module hack for prototyping in the browser",
   "author": "elsehow",
   "contributors": [
     "liliakai"
