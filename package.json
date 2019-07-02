@@ -1,7 +1,7 @@
 {
-  "name": "signal-protocol",
-  "repository": "https://github.com/elsehow/signal-protocol",
-  "description": "the signal ratcheting forward secrecy protocol, for node and browsers",
+  "name": "@tabcat/signal-protocol",
+  "repository": "https://github.com/tabcat/signal-protocol",
+  "description": "signal-protocol module hack for prototyping",
   "author": "elsehow",
   "contributors": [
     "liliakai"
@@ -11,30 +11,7 @@
   "license": "GPL-3.0",
   "dependencies": {
     "bytebuffer": "^5.0.1",
-    "chai": "^4.1.0",
     "long": "^3.2.0",
-    "node-webcrypto-ossl": "^1.0.30",
     "protobufjs": "^5.0.1",
-    "tiny-worker": "^2.1.1",
-    "webworkify": "^1.4.0"
-  },
-  "devDependencies": {
-    "chai": "^4.1.0",
-    "grunt": "^1.0.1",
-    "grunt-browserify": "^5.0.0",
-    "grunt-cli": "^1.2.0",
-    "grunt-contrib-concat": "^1.0.1",
-    "grunt-contrib-connect": "^1.0.2",
-    "grunt-contrib-jshint": "^1.1.0",
-    "grunt-jscs": "^3.0.1",
-    "grunt-mocha-test": "^0.13.2",
-    "grunt-preen": "^1.0.0 ",
-    "grunt-saucelabs": "^9.0.0",
-    "mocha": "^3.2.0"
-  },
-  "scripts": {
-    "build": "grunt build",
-    "test": "grunt test",
-    "lint": "grunt jshint"
   }
 }

@@ -217,8 +217,8 @@ module.exports = function(grunt) {
   });
 
   // grunt.registerTask('dev', ['connect', 'watch']);
-  grunt.registerTask('test', ['jshint', 'jscs', 'build', 'mochaTest', 'connect', 'saucelabs-mocha']);
-  grunt.registerTask('build', ['compile', 'concat', 'browserify']);
-  grunt.registerTask('default', ['build', 'test']);
+  //grunt.registerTask('test', ['jshint', 'jscs', 'build', 'mochaTest', 'connect', 'saucelabs-mocha']);
+  //grunt.registerTask('build', ['compile', 'concat', 'browserify']);
+  //grunt.registerTask('default', ['build', 'test']);
 
 };

@@ -9,12 +9,12 @@ var crypto = null;
 try {
   crypto = window.crypto;
 } catch (e) {
-  crypto = require('./node_polyfills.js').crypto;
+  throw new Error('env variable \'window\' not detected')
 }
 
 var Curve = require('./Curve.js');
 var util = require('./helpers.js');
-var dcodeIO = require('../build/dcodeIO.js');
+var ByteBuffer = require('bytebuffer');
 
 if (!crypto || !crypto.subtle || typeof crypto.getRandomValues !== 'function') {
   throw new Error('WebCrypto not found, and node-webcrypto-ossl not imported!');
@@ -117,8 +117,8 @@ myCrypto.verifyMAC = function(data, key, mac, length) {
       result = result | (a[i] ^ b[i]);
     }
     if (result !== 0) {
-      // console.log('Our MAC  ', dcodeIO.ByteBuffer.wrap(calculated_mac).toHex());
-      // console.log('Their MAC', dcodeIO.ByteBuffer.wrap(mac).toHex());
+      // console.log('Our MAC  ', ByteBuffer.wrap(calculated_mac).toHex());
+      // console.log('Their MAC', ByteBuffer.wrap(mac).toHex());
       throw new Error("Bad MAC");
     }
   });
