@@ -10,7 +10,7 @@ npm install @tabcat/signal-protocol
 ```
 import into module: 
 ```
-const libsignal = require(@tabcat/signal-protocol')
+const libsignal = require('@tabcat/signal-protocol')
 ```
 
 using libsignal-protocol-javascript:
