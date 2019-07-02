@@ -1,5 +1,5 @@
 # signal-protocol
-signal-protocol module hack for prototyping in the browser
+signal-protocol module hack for prototyping in the browser. works in BROWSER ONLY.
 
 WARNING: This code has NOT been reviewed by an experienced cryptographer. IT IS FOR RESEARCH ONLY!!!!!
 
