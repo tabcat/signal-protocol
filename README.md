@@ -1,7 +1,7 @@
 # signal-protocol
 signal-protocol module hack for prototyping in the browser
 
-
+WARNING: This code has NOT been reviewed by an experienced cryptographer. IT IS FOR RESEARCH ONLY!!!!!
 
 ## Usage
 install with npm:
